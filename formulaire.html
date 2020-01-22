@@ -6,9 +6,30 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Formulaire</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-<input type="tel">
-<button>Ok</button>
+<div class="container">
+    <h3>Titre du formulaire</h3>
+    <form>
+        <div class="form-group">
+            <label for="nom">Votre nom</label>
+            <input id="nom" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="prenom">Votre prénom</label>
+            <input id="prenom" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="email">Votre email</label>
+            <input id="email" type="email" class="form-control">
+        </div>
+        <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="check">
+            <label for="check">J'accepte les conditions</label>
+        </div>
+        <button class="btn btn-primary">Ok</button>
+    </form>
+</div>
 </body>
 </html>
